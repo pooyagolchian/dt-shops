@@ -10,6 +10,21 @@ This project has been developed with the last version of Nuxt.js
 ---
 
 
+## Important note 
+
+You need to create.env file in your local.
+```
+API_KEY = ''
+API_SECRET = ''
+API_URL = 'https://dvs-api.dtone.com/v1'
+```
+
+
+
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
