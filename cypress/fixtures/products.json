@@ -1,0 +1,83 @@
+[
+    {
+        "availability_zones": [
+            "INTERNATIONAL"
+        ],
+        "benefits": [
+            {
+                "additional_information": null,
+                "amount": {
+                    "base": 25,
+                    "promotion_bonus": 0,
+                    "total_excluding_tax": 25
+                },
+                "type": "CREDITS",
+                "unit": "DOP",
+                "unit_type": "CURRENCY"
+            }
+        ],
+        "description": "1 Day / 25 DOP / VIVA Customers with Mobile plans, Viva Mi Casa or Interjet only",
+        "destination": {
+            "amount": 25,
+            "unit": "DOP",
+            "unit_type": "CURRENCY"
+        },
+        "id": 50,
+        "name": "1 Day / 25 DOP",
+        "operator": {
+            "country": {
+                "iso_code": "DOM",
+                "name": "Dominican Republic",
+                "regions": null
+            },
+            "id": 1923,
+            "name": "Viva DR DTH",
+            "regions": null
+        },
+        "prices": {
+            "retail": {
+                "amount": 1.94,
+                "fee": 0,
+                "unit": "AED",
+                "unit_type": "CURRENCY"
+            },
+            "wholesale": {
+                "amount": 1.64,
+                "fee": 0,
+                "unit": "AED",
+                "unit_type": "CURRENCY"
+            }
+        },
+        "promotions": null,
+        "rates": {
+            "base": 15.2439024390244,
+            "retail": 12.8865979381443,
+            "wholesale": 15.2439024390244
+        },
+        "regions": null,
+        "required_beneficiary_fields": null,
+        "required_credit_party_identifier_fields": [
+            [
+                "account_number"
+            ]
+        ],
+        "required_debit_party_identifier_fields": null,
+        "required_sender_fields": null,
+        "required_statement_identifier_fields": null,
+        "service": {
+            "id": 6,
+            "name": "Television"
+        },
+        "source": {
+            "amount": 1.64,
+            "unit": "AED",
+            "unit_type": "CURRENCY"
+        },
+        "tags": null,
+        "type": "FIXED_VALUE_RECHARGE",
+        "validity": {
+            "quantity": 1,
+            "unit": "DAY"
+        }
+    }
+]
