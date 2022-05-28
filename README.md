@@ -9,9 +9,6 @@ This project has been developed with the last version of Nuxt.js
 
 ---
 
-## DEMO URL
-
-- [DEMO URL]()
 
 ## Available Scripts
 
