@@ -11,9 +11,9 @@ jobs:
     steps:
       - name: Development Code
         uses: actions/checkout@v2
-      - name: Use Node.js 17.x
+      - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
-          node-version: 17.x
+          node-version: 14.x
       - run: npm install --force
       - run: npm run generate
