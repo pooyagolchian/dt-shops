@@ -1,4 +1,75 @@
-# dt-shops-product
+# DT Shops products
+
+This project has been developed with the last version of Nuxt.js
+- Vue.js/Nuxt.js
+- Javascript, axios
+- Cypress for E2E
+- Prettier, ESLint, Husky
+- Netlify and GithubAction for CI/CD automate testing
+
+---
+
+## DEMO URL
+
+- [DEMO URL]()
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `yarn install`
+
+Install all the dependencies that are needed for developing.
+
+### `yarn dev`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.
+
+
+### `yarn cypress open`
+
+Cypress is a next-generation front-end testing tool built for the modern web. We address the key pain points developers and QA engineers face when testing modern applications.
+This command has been used to run the E2E test with Cypress. I have used cypress for E2E and mock data.
+
+### `yarn build`
+
+- This command builds the DT SHOPS application for production.
+
+### `yarn format`
+
+- This command formats all files with Prettier.
+
+---
+
+
+### Prettier
+
+Using [Prettier](https://prettier.io/) for opinionated code formatter.
+It will take care of the formatting for you.
+Prettier creates an abstract syntax tree from your code and uses it to write new code formatted according to a set of rules.
+In addition, I check pretty before every commit by adding a pre-commit hook. For more detail check package.json, husky section.
+
+### Husky
+
+Modern native Git hooks made easy. Husky is used for git hook pre-commit to format all code with Prettier.
+
+## Cypress E2E
+
+`yarn cypress open`
+
+---
+
+### GitHub actions for automated testing
+
+I have used GitHub actions for automated testing and run all Unit Test.
+
+
+
+---
+
 
 ## Build Setup
 
