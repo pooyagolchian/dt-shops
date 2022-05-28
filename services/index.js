@@ -1,8 +1,9 @@
 import Products from '~/services/api/products'
-
+import Filters from '~/services/api/filters'
 
 export default (context) => {
   return {
-    contactUsApi: Products(context.$axios),
+    ProductsService: Products(context.$axios),
+    FiltersService: Filters(context.$axios),
   }
 }

@@ -1,6 +1,8 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
+  target: 'static',
+  ssr: false,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: '%s - dt-shops-product',
@@ -13,12 +15,19 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
+  rootDir: process.cwd(),
+  buildDir: process.cwd() + '/.nuxt/',
+  publicRuntimeConfig: {
+    backendUrl: process.env.BACKEND_URL,
+    apiKey: process.env.API_KEY,
+    apiSecret: process.env.API_SECRET,
+  },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/api', '~/plugins/vue-toast'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -42,7 +51,15 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    proxy: true,
+  },
+
+  proxy: {
+    '/api/': {
+      target: 'https://dvs-api.dtone.com/v1',
+      pathRewrite: { '^/api/': '' },
+      changeOrigin: true,
+    },
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa

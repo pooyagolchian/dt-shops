@@ -1,14 +1,16 @@
 /* eslint-disable camelcase */
 
 export default (axios) => ({
-  getAllActives(page, per_page) {
-    return axios.get('/products', {
+  getProducts(page, per_page, filters) {
+    return axios.get('/api/products', {
       params: {
+        ...filters,
         page,
         per_page,
       },
     })
   },
+  getProductsById(id) {
+    return axios.get(`/api/products/${id}`)
+  },
 })
-
-
