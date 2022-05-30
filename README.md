@@ -16,7 +16,7 @@ You need to create.env file in your local.
 ```
 API_KEY = ''
 API_SECRET = ''
-API_URL = 'https://dvs-api.dtone.com/v1'
+API_URL = 'https://preprod-dvs-api.dtone.com/v1'
 ```
 
 
