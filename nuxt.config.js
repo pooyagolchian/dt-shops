@@ -54,7 +54,7 @@ export default {
 
   proxy: {
     '/api/': {
-      target: 'https://dvs-api.dtone.com/v1',
+      target: 'https://preprod-dvs-api.dtone.com/v1',
       pathRewrite: { '^/api/': '' },
       changeOrigin: true,
     },
